@@ -12,7 +12,7 @@ int main() {
     int w_fix = w0;
     int m_fix = m0;
 
-    // 변화 고려하는 경우
+    // 변화하는 경우
     int w_var = w0;
     int m_var = m0;
 
@@ -24,7 +24,6 @@ int main() {
         // 기초대사량 변화
         int diff = in - (m_var + act);
         if (abs(diff) > T) {
-            // C++에서 음수 나눗셈 주의 → double로 계산 후 내림
             m_var += (int)floor(diff / 2.0);
         }
     }
