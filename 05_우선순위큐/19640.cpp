@@ -9,7 +9,7 @@ struct employee{
     bool operator<(const employee& other) const{
         if(workday != other.workday) return workday < other.workday;
         if(urgent != other.urgent) return urgent < other.urgent;
-        if(idx != other.idx) return idx > other.idx;
+        if(numinline != other.numinline) return numinline > other.numinline;
         return false; //빼먹지 말기,,,,
     }
 };
